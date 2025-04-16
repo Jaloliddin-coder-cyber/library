@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Books Library</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>📚 Kitoblar Kutubxonasi</h1>
+
+      <div class="filters">
+        <input type="text" id="searchInput" placeholder="Search by title..." />
+        <input type="number" id="minYear" placeholder="Min year" />
+        <input type="number" id="maxYear" placeholder="Max year" />
+        <select id="genreSelect">
+          <option value="">All genres</option>
+          <option value="English">English</option>
+          <option value="French">French</option>
+          <option value="Russian">Russian</option>
+          <option value="German">German</option>
+          <option value="Arabic">Arabic</option>
+          <option value="Spanish">Spanish</option>
+        </select>
+        <select id="sortSelect">
+          <option value="">Sort by</option>
+          <option value="title">Title (A-Z)</option>
+          <option value="year">Year (newest)</option>
+          <option value="pages">Pages (high-low)</option>
+        </select>
+      </div>
+
+      <div id="book-list"></div>
+    </div>
+    <script src="./js/books.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
